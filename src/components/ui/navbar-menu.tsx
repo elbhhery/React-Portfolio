@@ -10,6 +10,7 @@ const transition = {
   restDelta: 0.001,
   restSpeed: 0.001,
 };
+
 type HoveredLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   children: ReactNode;
 };
@@ -68,12 +69,14 @@ export const Menu = ({
   children: React.ReactNode;
 }) => {
   return (
-    <nav
-      onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent bg-[#27272a] dark:border-white-20 shadow-input flex justify-center space-x-4 px-8 py-6 "
-    >
-      {children}
-    </nav>
+    <>
+      <nav
+        onMouseLeave={() => setActive(null)} // resets the state
+        className="relative rounded-full border border-transparent bg-[#27272a] dark:border-white-20 shadow-input flex justify-center space-x-4 px-8 py-6 "
+      >
+        {children}
+      </nav>
+    </>
   );
 };
 
