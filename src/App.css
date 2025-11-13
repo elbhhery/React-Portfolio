@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@theme inline {
+  --animate-cell-ripple: cell-ripple var(--duration, 200ms) ease-out none 1
+    var(--delay, 0ms);
+
+  @keyframes cell-ripple {
+    0% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0.4;
+    }
+  }
+}
+a,
+button {
+  cursor: pointer;
+}
+.my-container {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .my-container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .my-container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .my-container {
+    width: 1170px;
+  }
+}
