@@ -1,13 +1,7 @@
 "use client";
 import { Cn } from "../../lib/utils";
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  RefObject,
-  useCallback,
-} from "react";
-
+import React, { useState, useEffect, useCallback } from "react";
+import { useRef } from "react";
 interface StarProps {
   x: number;
   y: number;
@@ -34,8 +28,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
   className,
 }) => {
   const [stars, setStars] = useState<StarProps[]>([]);
-  const canvasRef: RefObject<HTMLCanvasElement> =
-    useRef<HTMLCanvasElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const generateStars = useCallback(
     (width: number, height: number): StarProps[] => {

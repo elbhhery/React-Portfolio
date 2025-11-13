@@ -1,16 +1,18 @@
 "use client";
-import React from "react";
+import React, { type ReactNode, type AnchorHTMLAttributes } from "react";
 import { motion } from "motion/react";
 
 const transition = {
-  type: "spring",
+  type: "spring" as const,
   mass: 0.5,
   damping: 11.5,
   stiffness: 100,
   restDelta: 0.001,
   restSpeed: 0.001,
 };
-
+type HoveredLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
+  children: ReactNode;
+};
 export const MenuItem = ({
   setActive,
   active,
@@ -103,7 +105,7 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }) => {
+export const HoveredLink = ({ children, ...rest }: HoveredLinkProps) => {
   return (
     <a
       {...rest}
