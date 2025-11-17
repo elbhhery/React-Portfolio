@@ -43,7 +43,7 @@ function Navbar({ className }: { className?: string }) {
           <div className="text-sm grid grid-cols-1 md:grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Audio E-commerce"
-              href="https://audio-phile-e-commerce-owv1l08uh-ali-elbhherys-projects.vercel.app/"
+              href="https://audio-phile-e-commerce.vercel.app/"
               src="./assets/Audiophile.png"
               description="Aduio Products Website For E-commerce"
             />
