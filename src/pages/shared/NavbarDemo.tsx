@@ -44,25 +44,25 @@ function Navbar({ className }: { className?: string }) {
             <ProductItem
               title="Audio E-commerce"
               href="https://audio-phile-e-commerce-owv1l08uh-ali-elbhherys-projects.vercel.app/"
-              src="../public/assets/Audiophile.png"
+              src="../../public/assets/Audiophile.png"
               description="Aduio Products Website For E-commerce"
             />
             <ProductItem
               title="professional Portfolio"
               href="https://mainportfolioo.netlify.app/"
-              src="../public/assets/portfolioPage.png"
+              src="../../public/assets/portfolioPage.png"
               description="professional Portfolio template can be used for Multiple Careers"
             />
             <ProductItem
               title="Brand Portfolio"
               href="https://elbhhery.github.io/Brand-Template/"
-              src="../public/assets/BrandName.png"
+              src="../../public/assets/BrandName.png"
               description="professional company website template"
             />
             <ProductItem
               title="Kasper"
               href="https://elbhhery.github.io/kasper-design/"
-              src="../public/assets/kasper.png"
+              src="../../public/assets/kasper.png"
               description="A landing page desgined for practice"
             />
           </div>
