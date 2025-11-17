@@ -8,6 +8,7 @@ export function BackgroundLinesDemo() {
         <br />
         Front-End Developer.
       </h2>
+      {"  "}
       <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-400 text-center">
         Front-End Developer Specialized in React, Next.js, and modern UI
         frameworks. Creating fast, scalable, and beautiful web solutions.
